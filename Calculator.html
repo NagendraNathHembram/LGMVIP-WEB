@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	Calculator
+	<div>
+		<input type="text" id="display"></input>
+		<input type="text" id="display2"></input>
+		<br><br>	
+	</div>
+	<div >
+		<button id="ac" class="acc" onclick="document.getElementById('display').value=' ',document.getElementById('display2').value=' '">AC</button>
+		<button id="←" class="arrow" onclick="document.getElementById('display').value=document.getElementById('display').value.slice(0, -1)">←</button>
+		<button id="add" class="math" onclick="document.getElementById('display').value+='+'">+</button>
+		<br><br>
+		<button id="1" class="number" onclick="document.getElementById('display').value+='1'">1</button>
+		<button id="2" class="number" onclick="document.getElementById('display').value+='2'">2</button>
+		<button id="3" class="number" onclick="document.getElementById('display').value+='3'">3</button>
+		<button id="-" class="math" onclick="document.getElementById('display').value+='-'">-</button>
+		<br><br>
+		<button id="4" class="number" onclick="document.getElementById('display').value+='4'">4</button>
+		<button id="5" class="number" onclick="document.getElementById('display').value+='5'">5</button>
+		<button id="6" class="number" onclick="document.getElementById('display').value+='6'">6</button>
+		<button id="*" class="math" onclick="document.getElementById('display').value+='*'">*</button>
+		<br><br>
+		
+		<button id="7" class="number" onclick="document.getElementById('display').value+='7'">7</button>
+		<button id="8" class="number" onclick="document.getElementById('display').value+='8'">8</button>
+		<button id="9" class="number" onclick="document.getElementById('display').value+='9'">9</button>
+		
+		<button id="/" class="math" onclick="document.getElementById('display').value+='/'">/</button>
+		<br><br>
+		
+		
+		<button id="." class="math" onclick="document.getElementById('display').value+='.'">.</button>
+		<button id="0" class="number" onclick="document.getElementById('display').value+='0'">0</button>
+		<button id="=" class="equall" onclick="document.getElementById('display2').value+=eval(document.getElementById('display').value)">=</button>
+	</div>
+		</div>
+	<script type="text/javascript">
+		console.log('input')
+
+	</script>
+</body>
+</html>
